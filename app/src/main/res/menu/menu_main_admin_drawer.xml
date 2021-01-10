@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_food">
+        <item
+            android:id="@+id/navigation_orders"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="@string/navigation_orders" />
+        <item
+            android:id="@+id/navigation_restaurants"
+            android:icon="@drawable/ic_baseline_restaurant_24"
+            android:title="@string/restaurants" />
+        <item
+            android:id="@+id/navigation_for_you"
+            android:icon="@drawable/ic_baseline_new_releases_24"
+            android:title="@string/navigation_for_you" />
+    </group>
+
+
+    <group android:id="@+id/group_user">
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/navigation_profile" />
+        <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/navigation_settings" />
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/navigation_logout" />
+    </group>
+
+</menu>
