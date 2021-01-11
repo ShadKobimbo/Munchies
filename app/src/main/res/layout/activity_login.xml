@@ -112,7 +112,7 @@
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
                 android:background="@color/purple_A400"
-                android:text="Login"
+                android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"
