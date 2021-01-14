@@ -9,9 +9,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
@@ -23,10 +26,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBar actionBar;
     private Toolbar toolbar;
 
+//    private Window window;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(1);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
+
         setContentView(R.layout.activity_main);
+
+
+//        window = this.getWindow();
+////        window.setStatusBarColor(this.getResources().getColor());
+//        window.setStatusBarColor(Color.TRANSPARENT);
+
 
         initView();
         initToolbar();

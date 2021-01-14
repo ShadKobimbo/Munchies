@@ -64,7 +64,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextEmailAddress"
+                android:id="@+id/editTextEmailAddressLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="-4dp"
@@ -90,7 +90,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextNumberPassword"
+                android:id="@+id/editTextNumberPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="-4dp"
@@ -107,6 +107,7 @@
                 android:layout_height="@dimen/spacing_mlarge" />
 
             <Button
+                android:id="@+id/buttonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginLeft="-4dp"
@@ -115,8 +116,7 @@
                 android:text="@string/login"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:onClick="login"/>
+                android:textStyle="bold"/>
 
             <View
                 android:layout_width="0dp"
