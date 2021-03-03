@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBar actionBar;
     private Toolbar toolbar;
 
-//    private Window window;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getWindow().setStatusBarColor(Color.TRANSPARENT);
 
         setContentView(R.layout.activity_main);
-
-
-//        window = this.getWindow();
-////        window.setStatusBarColor(this.getResources().getColor());
-//        window.setStatusBarColor(Color.TRANSPARENT);
-
 
         initView();
         initToolbar();
@@ -85,16 +77,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
                 break;
 
-//            case R.id.navigation_orders:
-//                intent.setClass(this, ScrollingActivity.class);
-//                startActivity(intent);
-//                break;
-//
-//            case R.id.navigation_restaurants:
-//                intent.setClass(this, FullscreenActivity.class);
-//                startActivity(intent);
-//                break;
-//
+            case R.id.navigation_orders:
+                intent.setClass(this, OrdersActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.navigation_restaurants:
+                intent.setClass(this, RestaurantsActivity.class);
+                startActivity(intent);
+                break;
+
 //            case R.id.navigation_for_you:
 //                intent.setClass(this, BottomNavigationActivity.class);
 //                startActivity(intent);
